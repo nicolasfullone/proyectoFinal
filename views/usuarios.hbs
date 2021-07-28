@@ -1,0 +1,63 @@
+            <nav class="navbar navbar-expand-lg navbar-light bg-green">   
+                    <div class="container-fluid">
+                        <a class="navbar-brand" style="color: rgb(0, 0, 0);">STL Photography</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/" style="color: rgb(0, 0, 0);">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="/productos" style="color: rgb(0, 0, 0);">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="/usuarios" style="color: rgb(0, 0, 0);">Usuarios</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>              
+        </nav>
+ 
+<div class="container">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">USERNAME</th>
+      <th scope="col">CORREO ELECTRÓNICO</th>
+      <th scope="col">HABILITADO</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each usuarios}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{username}}</td>
+      <td>{{email}}</td>
+      <td>{{habilitado}}</td>
+       <td><a href="/usuarios/single/{{id}}" class="btn btn-info">Ver más</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+
+<!--<div class="container-fluid bg-dark" style="height: 100vh;" >
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Username</th>
+        <th>Pass</th>
+    </tr>
+    {{#each usuarios}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{username}}</td>
+        <td>{{pass}}</td>
+        <td><a href="/usuarios/single/{{id}}" class="btn btn-info">Ver más</a></td>
+    </tr>
+    {{/each}}
+</table>
+</div> --> 

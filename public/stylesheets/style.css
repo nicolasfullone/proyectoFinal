@@ -1,0 +1,34 @@
+body {
+  background-image: url(../images/imagendefondo.png);
+  background-position: center;
+}
+
+.bg-green {
+  background-color: rgb(199, 223, 197);   
+}
+
+.navbar {
+  opacity: 90%;
+}
+.navbar:hover {
+  background-color: rgb(100, 216, 119);
+  transition: 2s;
+  opacity: 90%;
+}
+.nav-item{
+  margin-left: 7px;
+}
+.nav-item:hover {   
+  background-color: rgb(199, 223, 197);
+  transition: 0.7s;
+  opacity: 90%;
+  border-radius: 80% 30% / 26% 60%;
+}
+
+
+
+a {
+  color: #00B7FF;
+}
+
+
